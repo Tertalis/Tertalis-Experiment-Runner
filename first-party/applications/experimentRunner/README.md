@@ -16,7 +16,7 @@ contain `manifest.json` outside the App tree, where Pack discovery cannot scan
 them. A malformed current header never falls back to an older header.
 The usability package awaits independent Integration review.
 
-For first use on Windows, clone branch `actant-experiment-runner`. Run the
+For first use on Windows, clone `https://github.com/Tertalis/Tertalis-Experiment-Runner.git` (the independent application repository). Run the
 repository **root** `setup.bat` (or `setup.ps1`) for the embedded Python and
 shared Ruff/ty tools. Then run **this Application's** `setup.bat` (or `setup.ps1`)
 in `first-party/applications/experimentRunner/`. These are separate steps: App
