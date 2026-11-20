@@ -52,3 +52,49 @@ Application's own `setup.bat` or `setup.ps1` separately after root setup. Those
 scripts own local templates and user-file preservation and should check existing
 platform prerequisites; they do not invoke root setup. Platform checkouts need
 no Application source to provision tools.
+
+## Experiment Runner application setup
+
+This repository contains both Tertalis internals and Experiment Runner.
+The root setup scripts belong to **Tertalis** and do not initialize or
+discover the application.
+
+After successful root setup, run the separate application setup from the
+repository root:
+
+```powershell
+.\first-party\applications\experimentRunner\setup.bat
+```
+
+Alternatively, call
+`first-party/applications/experimentRunner/setup.ps1` directly from
+PowerShell. Application setup verifies prerequisite platform files/tools,
+then initializes private `local/` templates where absent; it preserves
+existing user configuration, experiments and results. It never calls root
+setup, downloads LLMs or takes over a model server.
+
+To run the default example, configure approved model/server paths in
+`first-party/applications/experimentRunner/local/host.basic.json`.
+Then edit the private `first-party/applications/experimentRunner/local/run.bat`
+to select an example and execute it. See the
+[application README](first-party/applications/experimentRunner/README.md)
+for exact requirements and guidance. The templates are not ready for real
+model execution until external assets have been configured.
+
+## Development test entry point
+
+From repository root after setup:
+
+```powershell
+.\python-embedded\python.exe -X frozen_modules=off -m pytest tests
+.\python-embedded\python.exe -X frozen_modules=off .\scripts\verify_tools.py
+```
+
+Run targeted test paths where applicable. Some tests need OS-specific or
+external prerequisites. These are command instructions, not a claim that
+the full suite has passed on the newly migrated repository.
+
+For cross-repository AI coordination, see
+[AGENTS.md](AGENTS.md). The canonical file-based inbox still lives on
+`actant-integration` in `EnterTheNameHere/Turnix`; copied local files
+are not independent active inboxes.
