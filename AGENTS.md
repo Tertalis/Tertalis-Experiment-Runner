@@ -53,3 +53,16 @@ tracked `run.bat` includes sample commands.
 
 Report which tests were actually run, outcomes, skipped conditions and
 exact Git refs. Follow the canonical coordination finish/handoff barrier.
+
+## Shared ai-workflow boundary
+
+Every assistant, implementer, integrator, coordinator and design thread must
+read the current canonical ai-workflow instructions at
+[Tertalis/Tertalis integration](https://github.com/Tertalis/Tertalis/blob/integration/ai-workflow/index.txt)
+before working. This repository's `ai-workflow/index.txt` is only a local
+routing stub; its `integration` branch is the application's development
+branch, not a coordination authority. All operational inboxes, messages,
+workstream state and repository-location registry are maintained only in
+`Tertalis/Tertalis` on `integration`. Do not create a local inbox or rely
+on copied historical mail. For other applications, consult Tertalis's
+canonical registry rather than recording their addresses here.
