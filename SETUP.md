@@ -96,5 +96,5 @@ the full suite has passed on the newly migrated repository.
 
 For cross-repository AI coordination, see
 [AGENTS.md](AGENTS.md). The canonical file-based inbox still lives on
-`actant-integration` in `EnterTheNameHere/Turnix`; copied local files
+`integration` in `Tertalis/Tertalis`; copied local files
 are not independent active inboxes.
