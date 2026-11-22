@@ -58,8 +58,8 @@ exact Git refs. Follow the canonical coordination finish/handoff barrier.
 
 For Tertalis platform contracts and design, consult the CURRENT
 `Tertalis/Tertalis` `integration` `design/index.txt` and relevant
-authoritative platform design/docs, not this Application checkout's
-possibly older copied `design/` or `docs/` files. Retrieve only the
+authoritative platform design/docs, because this Application does not carry copied root `design/`
+or `docs/` trees. Retrieve only the
 areas pertinent to the assigned task and its dependencies; do not load
 the entire design corpus by default. Current documentation does NOT
 authorize upgrading this Application's accepted Tertalis source SHA.
