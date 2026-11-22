@@ -12,7 +12,7 @@ Tertalis platform or cross-repository coordination authority.
    [the application README](first-party/applications/experimentRunner/README.md)
    for real prerequisites, models, application configuration and launch steps.
 3. Read the **canonical** coordination index and protocol on
-   [EnterTheNameHere/Turnix `actant-integration`](https://github.com/EnterTheNameHere/Turnix/tree/actant-integration/ai-workflow).
+   [Tertalis/Tertalis `integration`](https://github.com/Tertalis/Tertalis/tree/integration/ai-workflow).
    The `ai-workflow/` copies in this checkout are inherited snapshots, **not**
    independent current inboxes. Never publish coordinated messages or claims
    here as if those copies were authoritative.
