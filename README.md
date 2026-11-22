@@ -75,14 +75,14 @@ This repository **participates in the shared Tertalis development
 coordination system**. It does not maintain an independent authoritative
 AI inbox. Until the planned cross-repository coordination backend has
 been verified and adopted, the canonical file-based `ai-workflow`
-coordination ref remains `actant-integration` in
-[EnterTheNameHere/Turnix](https://github.com/EnterTheNameHere/Turnix/tree/actant-integration).
+coordination ref remains `integration` in
+[EnterTheNameHere/Turnix](https://github.com/Tertalis/Tertalis/tree/integration).
 Local copies in this repository are historical snapshots and must not
 become separate active inboxes. Always consult the canonical index and
 protocol before acquiring ownership or making coordinated changes.
 
 Application and platform revisions must be integrated and verified
-explicitly; a newer Tertalis version is not automatically accepted.
+explicitly; a newer Tertalis commit is not automatically accepted.
 
 ## Future direction
 
